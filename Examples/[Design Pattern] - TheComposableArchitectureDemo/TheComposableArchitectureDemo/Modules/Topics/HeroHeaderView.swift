@@ -1,0 +1,67 @@
+import SwiftUI
+import ComposableArchitecture
+
+struct HeroHeaderView: View {
+    let topic: Topic
+    
+    var body: some View {
+        Group {
+            if let coverPhoto = topic.coverPhoto {
+                NavigationLink(value: coverPhoto) {
+                    content
+                }
+                .buttonStyle(.plain)
+            } else {
+                content
+            }
+        }
+    }
+    
+    @ViewBuilder private var content: some View {
+        ZStack(alignment: .bottomLeading) {
+            // Get cover_photo from Topics API
+            if let coverURL = topic.coverPhoto?.urls.regular {
+                ImageView(
+                    store: Store(initialState: ImageFeature.State(url: coverURL)) {
+                        ImageFeature()
+                    }
+                )
+                .aspectRatio(contentMode: .fill)
+                .frame(maxWidth: .infinity, minHeight: 500, maxHeight: 500)
+                .clipped()
+            }
+            
+            LinearGradient(
+                gradient: Gradient(colors: [.black.opacity(0.9), .clear, .black.opacity(0.3)]),
+                startPoint: .bottom,
+                endPoint: .top
+            )
+            
+            VStack(alignment: .leading, spacing: 4) {
+                Text("FEATURED TOPIC")
+                    .font(.caption)
+                    .fontWeight(.bold)
+                    .foregroundColor(.yellow)
+                
+                Text(topic.title)
+                    .font(.system(size: 36, weight: .bold))
+                    .foregroundColor(.white)
+                
+                if let desc = topic.description {
+                    Text(desc)
+                        .font(.subheadline)
+                        .foregroundColor(.white.opacity(0.8))
+                        .lineLimit(2)
+                }
+            }
+            .padding(.horizontal, 20)
+            .padding(.bottom, 40)
+        }
+    }
+}
+
+#Preview {
+    HeroHeaderView(topic: Topic.mock)
+        .background(Color.black)
+        .ignoresSafeArea()
+}
