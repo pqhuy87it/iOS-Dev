@@ -9,12 +9,8 @@ struct SearchDatabaseClient {
 }
 
 extension SearchDatabaseClient: DependencyKey {
-    // Lưu ý: liveValue thực tế của bạn có thể cần inject ModelContainer từ AppEnvironment,
-    // Ở đây tôi viết mô phỏng cách gọi. Bạn có thể điều chỉnh lại chỗ khởi tạo MainDBRepository cho khớp dự án.
+    
     static let liveValue: SearchDatabaseClient = {
-        // 1. Khởi tạo ModelContainer dùng chung.
-        // Vì 'liveValue' là static let, đoạn code này chỉ chạy đúng 1 lần khi app khởi chạy,
-        // đảm bảo bạn chỉ có 1 instance của ModelContainer và DBRepository.
         let container: ModelContainer
         do {
             container = try ModelContainer.appModelContainer()
