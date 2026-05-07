@@ -17,7 +17,8 @@ struct PhotoCell: View {
             )
             // Lưu ý: Đảm bảo bên trong code của ImageView bạn đã cấu hình .resizable() và .aspectRatio(contentMode: .fill)
             // cho Image(uiImage:) nhé.
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 150, maxHeight: 150)
+            .frame(maxWidth: .infinity)
+            .aspectRatio(CGFloat(photo.width) / CGFloat(photo.height), contentMode: .fit)
             .clipped()
             .cornerRadius(12)
             .shadow(radius: 3)
