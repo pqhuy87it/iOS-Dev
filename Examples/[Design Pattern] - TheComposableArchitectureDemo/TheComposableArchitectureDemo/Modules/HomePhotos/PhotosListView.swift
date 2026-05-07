@@ -29,9 +29,19 @@ struct PhotosListView: View {
                                     PhotoCell(photo: photo)
                                 }
                                 .buttonStyle(.plain)
+                                .onAppear {
+                                    if photo.id == store.photos.last?.id {
+                                        store.send(.loadMorePhotos)
+                                    }
+                                }
                             }
                         }
                         .padding()
+
+                        if store.isLoadingMore {
+                            ProgressView()
+                                .padding(.vertical, 16)
+                        }
                     }
                     .refreshable {
                         store.send(.onAppear)
