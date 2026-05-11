@@ -1,58 +1,106 @@
 import Foundation
 import Combine
+import CryptoKit
+import Security
+
+// MARK: - Keychain Helper
+
+private enum Keychain {
+
+    static func save(_ data: Data, forKey key: String) {
+        let account = sha256(key)
+        let query: [CFString: Any] = [
+            kSecClass:            kSecClassGenericPassword,
+            kSecAttrAccount:      account,
+            kSecValueData:        data,
+            kSecAttrAccessible:   kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
+        ]
+        SecItemDelete(query as CFDictionary)
+        SecItemAdd(query as CFDictionary, nil)
+    }
+
+    static func load(forKey key: String) -> Data? {
+        let account = sha256(key)
+        let query: [CFString: Any] = [
+            kSecClass:       kSecClassGenericPassword,
+            kSecAttrAccount: account,
+            kSecReturnData:  true,
+            kSecMatchLimit:  kSecMatchLimitOne
+        ]
+        var result: AnyObject?
+        guard SecItemCopyMatching(query as CFDictionary, &result) == errSecSuccess else { return nil }
+        return result as? Data
+    }
+
+    static func delete(forKey key: String) {
+        let account = sha256(key)
+        let query: [CFString: Any] = [
+            kSecClass:       kSecClassGenericPassword,
+            kSecAttrAccount: account
+        ]
+        SecItemDelete(query as CFDictionary)
+    }
+
+    private static func sha256(_ input: String) -> String {
+        let digest = SHA256.hash(data: Data(input.utf8))
+        return digest.map { String(format: "%02x", $0) }.joined()
+    }
+}
 
 // MARK: - RegistrationStore
 
 final class RegistrationStore: ObservableObject {
-    
+
     @Published var draft: RegistrationDraft {
         didSet { persistDraft() }
     }
-    
+
     @Published var currentStep: RegistrationStep {
         didSet { persistStep() }
     }
-    
+
     private let draftKey = "registration.draft"
     private let stepKey  = "registration.step"
-    private let defaults = UserDefaults.standard
-    
+
     init() {
-        // Load draft
-        if let data = UserDefaults.standard.data(forKey: "registration.draft"),
+        if let data = Keychain.load(forKey: "registration.draft"),
            let saved = try? JSONDecoder().decode(RegistrationDraft.self, from: data) {
             self.draft = saved
         } else {
             self.draft = RegistrationDraft()
         }
-        
-        // Load step
-        let raw = UserDefaults.standard.integer(forKey: "registration.step")
-        self.currentStep = RegistrationStep(rawValue: raw) ?? .notStarted
+
+        if let data = Keychain.load(forKey: "registration.step"),
+           let raw = try? JSONDecoder().decode(Int.self, from: data) {
+            self.currentStep = RegistrationStep(rawValue: raw) ?? .notStarted
+        } else {
+            self.currentStep = .notStarted
+        }
     }
-    
+
     // MARK: Public API
-    
+
     func advance(to step: RegistrationStep) {
         currentStep = step
     }
-    
+
     func reset() {
         draft = RegistrationDraft()
         currentStep = .notStarted
-        defaults.removeObject(forKey: draftKey)
-        defaults.removeObject(forKey: stepKey)
+        Keychain.delete(forKey: draftKey)
+        Keychain.delete(forKey: stepKey)
     }
-    
+
     // MARK: Persistence
-    
+
     private func persistDraft() {
         guard let data = try? JSONEncoder().encode(draft) else { return }
-        defaults.set(data, forKey: draftKey)
+        Keychain.save(data, forKey: draftKey)
     }
-    
+
     private func persistStep() {
-        defaults.set(currentStep.rawValue, forKey: stepKey)
+        guard let data = try? JSONEncoder().encode(currentStep.rawValue) else { return }
+        Keychain.save(data, forKey: stepKey)
     }
 }
 
