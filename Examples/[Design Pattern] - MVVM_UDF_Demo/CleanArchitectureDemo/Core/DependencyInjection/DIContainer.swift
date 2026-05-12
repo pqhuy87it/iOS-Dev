@@ -12,7 +12,8 @@ struct DIContainer {
     }
 
     init(appState: AppState, interactors: Interactors) {
-        self.init(appState: Store<AppState>(appState), interactors: interactors)
+        self.init(appState: Store<AppState>(appState),
+                  interactors: interactors)
     }
 }
 
@@ -31,13 +32,15 @@ extension DIContainer {
         let photos: PhotoInteractorProtocol
 
         static var stub: Self {
-            .init(images: StubImagesInteractor(), photos: StubPhotoInteractor())
+            .init(images: StubImagesInteractor(),
+                  photos: StubPhotoInteractor())
         }
     }
 }
 
 extension EnvironmentValues {
-    @Entry var injected: DIContainer = DIContainer(appState: AppState(), interactors: .stub)
+    @Entry var injected: DIContainer = DIContainer(appState: AppState(),
+                                                   interactors: .stub)
 }
 
 extension View {

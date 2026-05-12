@@ -76,6 +76,7 @@ extension AppEnvironment {
 
 @MainActor extension AppEnvironment {
     func makeViewModelFactory() -> AppViewModelFactory {
-        return AppViewModelFactory(interactors: diContainer.interactors)
+        return AppViewModelFactory(interactors: diContainer.interactors,
+                                   appState: diContainer.appState)
     }
 }
