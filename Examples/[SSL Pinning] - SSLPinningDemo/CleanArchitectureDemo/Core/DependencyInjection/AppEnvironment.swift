@@ -41,7 +41,38 @@ extension AppEnvironment {
         configuration.httpMaximumConnectionsPerHost = 5
         configuration.requestCachePolicy = .returnCacheDataElseLoad
         configuration.urlCache = .shared
-        return URLSession(configuration: configuration)
+
+        // Pinning is disabled in DEBUG so Charles/mitmproxy can intercept traffic.
+//        #if DEBUG
+//        return URLSession(configuration: configuration)
+//        #else
+        let delegate = SSLPinningDelegate(pinnedDomains: pinnedDomains())
+        return URLSession(configuration: configuration, delegate: delegate, delegateQueue: nil)
+//        #endif
+    }
+
+    /// Domains and their pinning policies for RELEASE builds.
+    ///
+    /// How to get the public-key hash for a host:
+    ///   openssl s_client -connect api.unsplash.com:443 2>/dev/null \
+    ///     | openssl x509 -pubkey -noout \
+    ///     | openssl pkey -pubin -outform DER \
+    ///     | openssl dgst -sha256 -binary \
+    ///     | base64
+    ///
+    /// Add a backup hash (next certificate) alongside the current one so you
+    /// can rotate without a forced update.
+    private static func pinnedDomains() -> [String: SSLPinningDelegate.PinningMode] {
+        [
+            "api.unsplash.com": .publicKey(hashes: [
+                // Replace with the real SHA-256 SPKI hash(es) from the command above.
+                "AYPYJLVU3pG/1G/91agkdpRH0s69R0pgl0eude3Na18="
+            ]),
+            "images.unsplash.com": .publicKey(hashes: [
+                // Replace with the real SHA-256 SPKI hash(es) from the command above.
+                "XBbn+hw/7cMf+xEqW+p5CYf2cpvWidpbIjhJauBVx20="
+            ])
+        ]
     }
 
     private static func configuredWebRepositories(session: URLSession) -> DIContainer.WebRepositories {
