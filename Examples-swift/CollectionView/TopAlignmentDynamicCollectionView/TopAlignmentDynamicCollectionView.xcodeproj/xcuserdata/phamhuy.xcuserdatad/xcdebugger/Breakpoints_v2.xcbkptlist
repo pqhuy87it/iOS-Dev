@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BD6F9407-8A0E-4FC1-9A92-C92902A36CE6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D488EFC0-6FF6-4E46-B733-F805A0448EC4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TopAlignmentDynamicCollectionView/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewDidLayoutSubviews()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D488EFC0-6FF6-4E46-B733-F805A0448EC4 - de64027a59234376"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TopAlignmentDynamicCollectionView.ViewController.viewDidLayoutSubviews() -&gt; ()"
+                  moduleName = "TopAlignmentDynamicCollectionView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Temp/TopAlignmentDynamicCollectionView/TopAlignmentDynamicCollectionView/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "D488EFC0-6FF6-4E46-B733-F805A0448EC4 - de64027a59234376"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TopAlignmentDynamicCollectionView.ViewController.viewDidLayoutSubviews() -&gt; ()"
+                  moduleName = "TopAlignmentDynamicCollectionView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Temp/TopAlignmentDynamicCollectionView/TopAlignmentDynamicCollectionView/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "D488EFC0-6FF6-4E46-B733-F805A0448EC4 - de64027a59234295"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TopAlignmentDynamicCollectionView.ViewController.viewDidLayoutSubviews() -&gt; ()"
+                  moduleName = "TopAlignmentDynamicCollectionView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Temp/TopAlignmentDynamicCollectionView/TopAlignmentDynamicCollectionView/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
