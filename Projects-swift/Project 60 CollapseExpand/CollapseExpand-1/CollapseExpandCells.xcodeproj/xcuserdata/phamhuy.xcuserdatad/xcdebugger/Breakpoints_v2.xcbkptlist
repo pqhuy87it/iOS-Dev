@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EB3060E4-13E4-4668-9C83-4060BB81D068"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B0A712F-D8EA-4EC8-B42E-41C6FFB59AA2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "tableView(_:heightForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9848CD93-BFF2-45F5-A842-F9B7B488CB90"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "544A6A1A-F5B7-461F-9EAE-7C951EB644CB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "tableView(_:heightForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D523AD61-9833-49C8-9394-7DB10C1FADC2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "412552AE-ECE9-4392-BECA-0DA9778EFABB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "collapseCell(_:at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "412552AE-ECE9-4392-BECA-0DA9778EFABB - fcb035457d29e99c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in CollapseExpandCells.CollapseExpandCellsViewController.collapseCell(_: __C.UITableViewCell, at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CollapseExpandCells"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Swift-Projects/Project%2060%20CollapseExpandCells/CollapseExpandCells-1/CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "940">
+               </Location>
+               <Location
+                  uuid = "412552AE-ECE9-4392-BECA-0DA9778EFABB - fcb035457d29e800"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in CollapseExpandCells.CollapseExpandCellsViewController.collapseCell(_: __C.UITableViewCell, at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CollapseExpandCells"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Swift-Projects/Project%2060%20CollapseExpandCells/CollapseExpandCells-1/CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "412552AE-ECE9-4392-BECA-0DA9778EFABB - fcb035457d29e99c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in CollapseExpandCells.CollapseExpandCellsViewController.collapseCell(_: __C.UITableViewCell, at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CollapseExpandCells"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Swift-Projects/Project%2060%20CollapseExpandCells/CollapseExpandCells-1/CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "992">
+               </Location>
+               <Location
+                  uuid = "412552AE-ECE9-4392-BECA-0DA9778EFABB - b279fa434329167"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in CollapseExpandCells.CollapseExpandCellsViewController.collapseCell(_: __C.UITableViewCell, at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CollapseExpandCells"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Swift-Projects/Project%2060%20CollapseExpand/CollapseExpand-1/CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "992">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00C59D75-E5EA-4D25-A836-BFE6DF64E739"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "collapseCell(_:at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "00C59D75-E5EA-4D25-A836-BFE6DF64E739 - fcb035457d29e85e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in CollapseExpandCells.CollapseExpandCellsViewController.collapseCell(_: __C.UITableViewCell, at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CollapseExpandCells"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Swift-Projects/Project%2060%20CollapseExpandCells/CollapseExpandCells-1/CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "1224">
+               </Location>
+               <Location
+                  uuid = "00C59D75-E5EA-4D25-A836-BFE6DF64E739 - fcb035457d29e800"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in CollapseExpandCells.CollapseExpandCellsViewController.collapseCell(_: __C.UITableViewCell, at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CollapseExpandCells"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Swift-Projects/Project%2060%20CollapseExpandCells/CollapseExpandCells-1/CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "00C59D75-E5EA-4D25-A836-BFE6DF64E739 - fcb035457d29e85e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in CollapseExpandCells.CollapseExpandCellsViewController.collapseCell(_: __C.UITableViewCell, at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CollapseExpandCells"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Swift-Projects/Project%2060%20CollapseExpandCells/CollapseExpandCells-1/CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "2052">
+               </Location>
+               <Location
+                  uuid = "00C59D75-E5EA-4D25-A836-BFE6DF64E739 - b279fa434329129"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in CollapseExpandCells.CollapseExpandCellsViewController.collapseCell(_: __C.UITableViewCell, at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CollapseExpandCells"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/iOS/Swift-Projects/Project%2060%20CollapseExpand/CollapseExpand-1/CollapseExpandCells/CollapseExpandCells/Controllers/CollapseExpandCellsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "2052">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
