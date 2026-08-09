@@ -25,7 +25,7 @@ class BrowserItem: NSObject {
     
     fileprivate var transformWhenGestureBegan = SimpleTransform()
     fileprivate var centerWhenGestureBegan = CGPoint.zero
-    fileprivate (set) var gestureInProgress = false
+    fileprivate(set) var gestureInProgress = false
     
     var frame: CGRect {
         var f = CGRect.zero
@@ -38,7 +38,7 @@ class BrowserItem: NSObject {
         return f
     }
     
-    fileprivate (set) weak var browserView: BrowserView? = nil
+    fileprivate(set) weak var browserView: BrowserView? = nil
     
     override init() {
         super.init()

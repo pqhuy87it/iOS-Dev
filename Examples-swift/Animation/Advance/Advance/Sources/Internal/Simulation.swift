@@ -29,7 +29,7 @@ struct Simulation<Value: VectorConvertible> {
     
     /// Returns `true` if the solver has converged and does not currently
     /// need to be advanced on each frame.
-    fileprivate (set) var hasConverged: Bool = false
+    fileprivate(set) var hasConverged: Bool = false
     
     // The current state of the solver.
     private var current: (value: Value, velocity: Value)
@@ -53,12 +53,12 @@ struct Simulation<Value: VectorConvertible> {
     fileprivate mutating func convergeIfPossible() {
         guard hasConverged == false else { return }
         
-        switch function.convergence(value: current.value.animatableData, velocity: current.velocity.animatableData) {
+        switch function.convergence(value: current.value.vector, velocity: current.velocity.vector) {
         case .keepRunning:
             break
         case .converge(let convergedValue):
-            current.value.animatableData = convergedValue
-            current.velocity.animatableData = .zero
+            current.value.vector = convergedValue
+            current.velocity.vector = .zero
             interpolated = current
             hasConverged = true
         }
@@ -112,13 +112,13 @@ struct Simulation<Value: VectorConvertible> {
             // will let us provide a more accurate value to the outside world,
             // while maintaining a consistent time step internally.
             let alpha = Double((simulationFrameDuration + timeAccumulator) / simulationFrameDuration)
-            interpolated.value.animatableData = interpolate(
-                from: previous.value.animatableData,
-                to: current.value.animatableData,
+            interpolated.value.vector = interpolate(
+                from: previous.value.vector,
+                to: current.value.vector,
                 alpha: alpha)
-            interpolated.velocity.animatableData = interpolate(
-                from: previous.velocity.animatableData,
-                to: current.velocity.animatableData,
+            interpolated.velocity.vector = interpolate(
+                from: previous.velocity.vector,
+                to: current.velocity.vector,
                 alpha: alpha)
         }
     }
@@ -153,19 +153,19 @@ struct Simulation<Value: VectorConvertible> {
 
 fileprivate struct AnySimulationFunction<Value>: SimulationFunction where Value: VectorConvertible {
     
-    private let _acceleration: (Value.AnimatableData, Value.AnimatableData) -> Value.AnimatableData
-    private let _convergence: (Value.AnimatableData, Value.AnimatableData) -> Convergence<Value>
+    private let _acceleration: (Value.VectorType, Value.VectorType) -> Value.VectorType
+    private let _convergence: (Value.VectorType, Value.VectorType) -> Convergence<Value>
     
     public init<T: SimulationFunction>(_ wrapped: T) where T.Value == Value {
         _acceleration = wrapped.acceleration
         _convergence = wrapped.convergence
     }
     
-    public func acceleration(value: Value.AnimatableData, velocity: Value.AnimatableData) -> Value.AnimatableData {
+    public func acceleration(value: Value.VectorType, velocity: Value.VectorType) -> Value.VectorType {
         return _acceleration(value, velocity)
     }
     
-    public func convergence(value: Value.AnimatableData, velocity: Value.AnimatableData) -> Convergence<Value> {
+    public func convergence(value: Value.VectorType, velocity: Value.VectorType) -> Convergence<Value> {
         return _convergence(value, velocity)
     }
     

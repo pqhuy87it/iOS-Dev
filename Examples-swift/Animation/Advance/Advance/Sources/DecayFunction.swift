@@ -15,13 +15,13 @@ public struct DecayFunction<T>: SimulationFunction where T: VectorConvertible {
     }
     
     /// Calculates acceleration for a given state of the simulation.
-    public func acceleration(value: T.AnimatableData, velocity: T.AnimatableData) -> T.AnimatableData {
+    public func acceleration(value: T.VectorType, velocity: T.VectorType) -> T.VectorType {
         var accel = velocity
         accel.scale(by: -drag)
         return accel
     }
     
-    public func convergence(value: T.AnimatableData, velocity: T.AnimatableData) -> Convergence<T> {
+    public func convergence(value: T.VectorType, velocity: T.VectorType) -> Convergence<T> {
         if velocity.magnitudeSquared < threshold*threshold {
             return .converge(atValue: value)
         } else {

@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E34F17842A30375D0031ACBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F17832A30375D0031ACBC /* AppDelegate.swift */; };
+		E34F17862A30375D0031ACBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F17852A30375D0031ACBC /* SceneDelegate.swift */; };
+		E34F17882A30375D0031ACBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F17872A30375D0031ACBC /* ViewController.swift */; };
+		E34F178B2A30375D0031ACBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34F17892A30375D0031ACBC /* Main.storyboard */; };
+		E34F178D2A30375E0031ACBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E34F178C2A30375E0031ACBC /* Assets.xcassets */; };
+		E34F17902A30375E0031ACBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34F178E2A30375E0031ACBC /* LaunchScreen.storyboard */; };
+		E34F179B2A30375E0031ACBC /* StackViewDynamicHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F179A2A30375E0031ACBC /* StackViewDynamicHeightTests.swift */; };
+		E34F17A52A30375E0031ACBC /* StackViewDynamicHeightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F17A42A30375E0031ACBC /* StackViewDynamicHeightUITests.swift */; };
+		E34F17A72A30375E0031ACBC /* StackViewDynamicHeightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F17A62A30375E0031ACBC /* StackViewDynamicHeightUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E34F17972A30375E0031ACBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E34F17782A30375D0031ACBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34F177F2A30375D0031ACBC;
+			remoteInfo = StackViewDynamicHeight;
+		};
+		E34F17A12A30375E0031ACBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E34F17782A30375D0031ACBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34F177F2A30375D0031ACBC;
+			remoteInfo = StackViewDynamicHeight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E34F17802A30375D0031ACBC /* StackViewDynamicHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackViewDynamicHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34F17832A30375D0031ACBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E34F17852A30375D0031ACBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E34F17872A30375D0031ACBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E34F178A2A30375D0031ACBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E34F178C2A30375E0031ACBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E34F178F2A30375E0031ACBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E34F17912A30375E0031ACBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34F17962A30375E0031ACBC /* StackViewDynamicHeightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackViewDynamicHeightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34F179A2A30375E0031ACBC /* StackViewDynamicHeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewDynamicHeightTests.swift; sourceTree = "<group>"; };
+		E34F17A02A30375E0031ACBC /* StackViewDynamicHeightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackViewDynamicHeightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34F17A42A30375E0031ACBC /* StackViewDynamicHeightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewDynamicHeightUITests.swift; sourceTree = "<group>"; };
+		E34F17A62A30375E0031ACBC /* StackViewDynamicHeightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewDynamicHeightUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E34F177D2A30375D0031ACBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34F17932A30375E0031ACBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34F179D2A30375E0031ACBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E34F17772A30375D0031ACBC = {
+			isa = PBXGroup;
+			children = (
+				E34F17822A30375D0031ACBC /* StackViewDynamicHeight */,
+				E34F17992A30375E0031ACBC /* StackViewDynamicHeightTests */,
+				E34F17A32A30375E0031ACBC /* StackViewDynamicHeightUITests */,
+				E34F17812A30375D0031ACBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E34F17812A30375D0031ACBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E34F17802A30375D0031ACBC /* StackViewDynamicHeight.app */,
+				E34F17962A30375E0031ACBC /* StackViewDynamicHeightTests.xctest */,
+				E34F17A02A30375E0031ACBC /* StackViewDynamicHeightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E34F17822A30375D0031ACBC /* StackViewDynamicHeight */ = {
+			isa = PBXGroup;
+			children = (
+				E34F17832A30375D0031ACBC /* AppDelegate.swift */,
+				E34F17852A30375D0031ACBC /* SceneDelegate.swift */,
+				E34F17872A30375D0031ACBC /* ViewController.swift */,
+				E34F17892A30375D0031ACBC /* Main.storyboard */,
+				E34F178C2A30375E0031ACBC /* Assets.xcassets */,
+				E34F178E2A30375E0031ACBC /* LaunchScreen.storyboard */,
+				E34F17912A30375E0031ACBC /* Info.plist */,
+			);
+			path = StackViewDynamicHeight;
+			sourceTree = "<group>";
+		};
+		E34F17992A30375E0031ACBC /* StackViewDynamicHeightTests */ = {
+			isa = PBXGroup;
+			children = (
+				E34F179A2A30375E0031ACBC /* StackViewDynamicHeightTests.swift */,
+			);
+			path = StackViewDynamicHeightTests;
+			sourceTree = "<group>";
+		};
+		E34F17A32A30375E0031ACBC /* StackViewDynamicHeightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E34F17A42A30375E0031ACBC /* StackViewDynamicHeightUITests.swift */,
+				E34F17A62A30375E0031ACBC /* StackViewDynamicHeightUITestsLaunchTests.swift */,
+			);
+			path = StackViewDynamicHeightUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E34F177F2A30375D0031ACBC /* StackViewDynamicHeight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34F17AA2A30375E0031ACBC /* Build configuration list for PBXNativeTarget "StackViewDynamicHeight" */;
+			buildPhases = (
+				E34F177C2A30375D0031ACBC /* Sources */,
+				E34F177D2A30375D0031ACBC /* Frameworks */,
+				E34F177E2A30375D0031ACBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackViewDynamicHeight;
+			productName = StackViewDynamicHeight;
+			productReference = E34F17802A30375D0031ACBC /* StackViewDynamicHeight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E34F17952A30375E0031ACBC /* StackViewDynamicHeightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34F17AD2A30375E0031ACBC /* Build configuration list for PBXNativeTarget "StackViewDynamicHeightTests" */;
+			buildPhases = (
+				E34F17922A30375E0031ACBC /* Sources */,
+				E34F17932A30375E0031ACBC /* Frameworks */,
+				E34F17942A30375E0031ACBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34F17982A30375E0031ACBC /* PBXTargetDependency */,
+			);
+			name = StackViewDynamicHeightTests;
+			productName = StackViewDynamicHeightTests;
+			productReference = E34F17962A30375E0031ACBC /* StackViewDynamicHeightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E34F179F2A30375E0031ACBC /* StackViewDynamicHeightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34F17B02A30375E0031ACBC /* Build configuration list for PBXNativeTarget "StackViewDynamicHeightUITests" */;
+			buildPhases = (
+				E34F179C2A30375E0031ACBC /* Sources */,
+				E34F179D2A30375E0031ACBC /* Frameworks */,
+				E34F179E2A30375E0031ACBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34F17A22A30375E0031ACBC /* PBXTargetDependency */,
+			);
+			name = StackViewDynamicHeightUITests;
+			productName = StackViewDynamicHeightUITests;
+			productReference = E34F17A02A30375E0031ACBC /* StackViewDynamicHeightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E34F17782A30375D0031ACBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E34F177F2A30375D0031ACBC = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					E34F17952A30375E0031ACBC = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = E34F177F2A30375D0031ACBC;
+					};
+					E34F179F2A30375E0031ACBC = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = E34F177F2A30375D0031ACBC;
+					};
+				};
+			};
+			buildConfigurationList = E34F177B2A30375D0031ACBC /* Build configuration list for PBXProject "StackViewDynamicHeight" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E34F17772A30375D0031ACBC;
+			productRefGroup = E34F17812A30375D0031ACBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E34F177F2A30375D0031ACBC /* StackViewDynamicHeight */,
+				E34F17952A30375E0031ACBC /* StackViewDynamicHeightTests */,
+				E34F179F2A30375E0031ACBC /* StackViewDynamicHeightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E34F177E2A30375D0031ACBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34F17902A30375E0031ACBC /* LaunchScreen.storyboard in Resources */,
+				E34F178D2A30375E0031ACBC /* Assets.xcassets in Resources */,
+				E34F178B2A30375D0031ACBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34F17942A30375E0031ACBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34F179E2A30375E0031ACBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E34F177C2A30375D0031ACBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34F17882A30375D0031ACBC /* ViewController.swift in Sources */,
+				E34F17842A30375D0031ACBC /* AppDelegate.swift in Sources */,
+				E34F17862A30375D0031ACBC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34F17922A30375E0031ACBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34F179B2A30375E0031ACBC /* StackViewDynamicHeightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34F179C2A30375E0031ACBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34F17A52A30375E0031ACBC /* StackViewDynamicHeightUITests.swift in Sources */,
+				E34F17A72A30375E0031ACBC /* StackViewDynamicHeightUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E34F17982A30375E0031ACBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34F177F2A30375D0031ACBC /* StackViewDynamicHeight */;
+			targetProxy = E34F17972A30375E0031ACBC /* PBXContainerItemProxy */;
+		};
+		E34F17A22A30375E0031ACBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34F177F2A30375D0031ACBC /* StackViewDynamicHeight */;
+			targetProxy = E34F17A12A30375E0031ACBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E34F17892A30375D0031ACBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E34F178A2A30375D0031ACBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E34F178E2A30375E0031ACBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E34F178F2A30375E0031ACBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E34F17A82A30375E0031ACBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E34F17A92A30375E0031ACBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E34F17AB2A30375E0031ACBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 876TYNZR4W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StackViewDynamicHeight/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rakuten.StackViewDynamicHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E34F17AC2A30375E0031ACBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 876TYNZR4W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StackViewDynamicHeight/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rakuten.StackViewDynamicHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E34F17AE2A30375E0031ACBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 876TYNZR4W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rakuten.StackViewDynamicHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackViewDynamicHeight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StackViewDynamicHeight";
+			};
+			name = Debug;
+		};
+		E34F17AF2A30375E0031ACBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 876TYNZR4W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rakuten.StackViewDynamicHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackViewDynamicHeight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StackViewDynamicHeight";
+			};
+			name = Release;
+		};
+		E34F17B12A30375E0031ACBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 876TYNZR4W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rakuten.StackViewDynamicHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StackViewDynamicHeight;
+			};
+			name = Debug;
+		};
+		E34F17B22A30375E0031ACBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 876TYNZR4W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rakuten.StackViewDynamicHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StackViewDynamicHeight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E34F177B2A30375D0031ACBC /* Build configuration list for PBXProject "StackViewDynamicHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34F17A82A30375E0031ACBC /* Debug */,
+				E34F17A92A30375E0031ACBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E34F17AA2A30375E0031ACBC /* Build configuration list for PBXNativeTarget "StackViewDynamicHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34F17AB2A30375E0031ACBC /* Debug */,
+				E34F17AC2A30375E0031ACBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E34F17AD2A30375E0031ACBC /* Build configuration list for PBXNativeTarget "StackViewDynamicHeightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34F17AE2A30375E0031ACBC /* Debug */,
+				E34F17AF2A30375E0031ACBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E34F17B02A30375E0031ACBC /* Build configuration list for PBXNativeTarget "StackViewDynamicHeightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34F17B12A30375E0031ACBC /* Debug */,
+				E34F17B22A30375E0031ACBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E34F17782A30375D0031ACBC /* Project object */;
+}

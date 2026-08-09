@@ -9,7 +9,7 @@ let simulationFrameDuration: Double = 0.008
 /// is used to integrate the acceleration function.
 extension SimulationFunction {
     
-    private typealias Derivative = (value: Value.AnimatableData, velocity: Value.AnimatableData)
+    private typealias Derivative = (value: Value.VectorType, velocity: Value.VectorType)
     
     /// Integrates time into an existing simulation state, returning the resulting
     /// simulation state.
@@ -19,10 +19,10 @@ extension SimulationFunction {
         
         let initial = Derivative(value: .zero, velocity: .zero)
         
-        let a = evaluate(value: value.animatableData, velocity: velocity.animatableData, time: 0.0, derivative: initial)
-        let b = evaluate(value: value.animatableData, velocity: velocity.animatableData, time: time * 0.5, derivative: a)
-        let c = evaluate(value: value.animatableData, velocity: velocity.animatableData, time: time * 0.5, derivative: b)
-        let d = evaluate(value: value.animatableData, velocity: velocity.animatableData, time: time, derivative: c)
+        let a = evaluate(value: value.vector, velocity: velocity.vector, time: 0.0, derivative: initial)
+        let b = evaluate(value: value.vector, velocity: velocity.vector, time: time * 0.5, derivative: a)
+        let c = evaluate(value: value.vector, velocity: velocity.vector, time: time * 0.5, derivative: b)
+        let d = evaluate(value: value.vector, velocity: velocity.vector, time: time, derivative: c)
         
         var dxdt = b.value + c.value
         dxdt.scale(by: 2.0)
@@ -38,10 +38,10 @@ extension SimulationFunction {
         dvdt.scale(by: time)
         
         var resultValue = value
-        resultValue.animatableData += dxdt
+        resultValue.vector += dxdt
         
         var resultVelocity = velocity
-        resultVelocity.animatableData += dvdt
+        resultVelocity.vector += dvdt
         
         return (
             value: resultValue,
@@ -50,7 +50,7 @@ extension SimulationFunction {
         
     }
     
-    private func evaluate(value: Value.AnimatableData, velocity: Value.AnimatableData, time: Double, derivative: Derivative) -> Derivative {
+    private func evaluate(value: Value.VectorType, velocity: Value.VectorType, time: Double, derivative: Derivative) -> Derivative {
         var nextValue = derivative.value
         nextValue.scale(by: time)
         nextValue += value
@@ -87,11 +87,11 @@ extension SpringFunction {
         while !hasConverged {
             (value, velocity) = integrate(value: value, velocity: velocity, time: simulationFrameDuration)
             duration += simulationFrameDuration
-            switch convergence(value: value.animatableData, velocity: velocity.animatableData) {
+            switch convergence(value: value.vector, velocity: velocity.vector) {
             case .keepRunning:
                 continue
             case .converge(atValue: let convergedValue):
-                value.animatableData = convergedValue
+                value.vector = convergedValue
                 hasConverged = true
             }
             

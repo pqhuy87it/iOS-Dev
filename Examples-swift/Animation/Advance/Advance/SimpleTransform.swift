@@ -31,5 +31,5 @@ extension SimpleTransform {
 }
 
 extension SimpleTransform: VectorConvertible {
-    public typealias AnimatableData = VectorPair<CGFloat, CGFloat>
+    public typealias VectorType = VectorPair<CGFloat, CGFloat>
 }

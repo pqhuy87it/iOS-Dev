@@ -2,7 +2,7 @@
 //  DAExpandAnimation.swift
 //
 //  Copyright (c) 2015 - 2021 Denis Avdeev. All rights reserved.
-//        
+//
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
 //  to deal in the Software without restriction, including
@@ -26,8 +26,7 @@
 import UIKit
 
 public class DAExpandAnimation: NSObject, UIViewControllerAnimatedTransitioning {
-    
-    private struct Constants {
+    private enum Constants {
         static let systemAnimationDuration = 0.24
     }
     
@@ -114,7 +113,7 @@ public class DAExpandAnimation: NSObject, UIViewControllerAnimatedTransitioning 
         }
         topSlidingView?.frame = backgroundView.convert(topSlidingView!.frame, to: inView)
         bottomSlidingView?.frame = backgroundView.convert(bottomSlidingView!.frame, to: inView)
-        if !(presentingViewAdapter?.shouldSlideApart == false) && topSlidingView != nil && bottomSlidingView != nil {
+        if !(presentingViewAdapter?.shouldSlideApart == false), topSlidingView != nil, bottomSlidingView != nil {
             inView.addSubview(topSlidingView!)
             inView.addSubview(bottomSlidingView!)
         }
@@ -163,11 +162,9 @@ public class DAExpandAnimation: NSObject, UIViewControllerAnimatedTransitioning 
             }
         )
     }
-    
 }
 
 public protocol DAExpandAnimationPresentingViewAdapter: AnyObject {
-    
     /// A boolean value that determines whether the animations include sliding
     /// the presenting view apart. Defaults to `true`.
     var shouldSlideApart: Bool { get }
@@ -177,11 +174,9 @@ public protocol DAExpandAnimationPresentingViewAdapter: AnyObject {
     
     /// Notifies the presenting view adapter that animations are just completed.
     func animationsDidEnd(presenting isPresentation: Bool)
-    
 }
 
 public protocol DAExpandAnimationPresentedViewAdapter: AnyObject {
-    
     /// Gives the presented view adapter a chance to prepare
     /// the expanding `view` before the animations.
     func prepare(expanding view: UIView)
@@ -205,26 +200,24 @@ public protocol DAExpandAnimationPresentedViewAdapter: AnyObject {
     /// Gives the presented view adapter ability to clean the collapsed `view`
     /// up after the animations are performed.
     func cleanup(collapsing view: UIView)
-    
 }
 
 // Default protocol implementations
 
 public extension DAExpandAnimationPresentingViewAdapter {
-    
-    var shouldSlideApart: Bool { return true }
+    var shouldSlideApart: Bool {
+        return true
+    }
+
     func animationsWillBegin(in view: UIView, presenting isPresentation: Bool) {}
     func animationsDidEnd(presenting isPresentation: Bool) {}
-    
 }
 
 public extension DAExpandAnimationPresentedViewAdapter {
-    
     func prepare(expanding view: UIView) {}
     func animate(expanding view: UIView) {}
     func cleanup(expanding view: UIView) {}
     func prepare(collapsing view: UIView) {}
     func animate(collapsing view: UIView) {}
     func cleanup(collapsing view: UIView) {}
-    
 }

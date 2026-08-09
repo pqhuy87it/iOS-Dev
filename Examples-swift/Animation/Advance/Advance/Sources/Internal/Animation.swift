@@ -17,9 +17,9 @@ struct Animation<Value: VectorConvertible> {
     let timingFunction: TimingFunction
     
     /// The current value.
-    private (set) var value: Value
+    private(set) var value: Value
     
-    private (set) var velocity: Value
+    private(set) var velocity: Value
     
     private var elapsed: Double = 0.0
     
@@ -36,7 +36,7 @@ struct Animation<Value: VectorConvertible> {
         self.timingFunction = timingFunction
         self.value = from
         self.velocity = from
-        self.velocity.animatableData = .zero
+        self.velocity.vector = .zero
     }
     
 
@@ -58,11 +58,11 @@ struct Animation<Value: VectorConvertible> {
         progress = min(progress, 1.0)
         let adjustedProgress = timingFunction.solve(at: progress, epsilon: 1.0 / (duration * 1000.0))
         
-        value.animatableData = interpolate(from: from.animatableData, to: to.animatableData, alpha: adjustedProgress)
+        value.vector = interpolate(from: from.vector, to: to.vector, alpha: adjustedProgress)
         
-        var vel = value.animatableData - starting.animatableData
+        var vel = value.vector - starting.vector
         vel.scale(by: 1.0/time)
-        velocity.animatableData = vel
+        velocity.vector = vel
     }
     
 }

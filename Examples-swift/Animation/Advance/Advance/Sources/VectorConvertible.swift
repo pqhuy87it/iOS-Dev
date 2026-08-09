@@ -6,16 +6,16 @@ public protocol VectorConvertible {
     
     /// The concrete VectorType implementation that can represent the 
     /// conforming type.
-    associatedtype AnimatableData: VectorArithmetic
+    associatedtype VectorType: VectorArithmetic
     
     /// The vector representation of this instance.
-    var animatableData: AnimatableData { get set }
+    var vector: VectorType { get set }
     
 }
 
-extension VectorConvertible where AnimatableData == Self {
+extension VectorConvertible where VectorType == Self {
     
-    public var animatableData: Self {
+    public var vector: Self {
         get {
             self
         }
@@ -24,8 +24,8 @@ extension VectorConvertible where AnimatableData == Self {
         }
     }
     
-    public init(animatableData: Self) {
-        self = animatableData
+    public init(vector: Self) {
+        self = vector
     }
     
 }
@@ -125,7 +125,7 @@ extension CGFloat: VectorArithmetic, VectorConvertible {
 /// Adds `VectorConvertible` conformance
 extension CGSize: VectorConvertible {
     
-    public var animatableData: VectorPair<CGFloat, CGFloat> {
+    public var vector: VectorPair<CGFloat, CGFloat> {
         get {
             VectorPair(
                 first: width,
@@ -137,10 +137,10 @@ extension CGSize: VectorConvertible {
         }
     }
     
-    public init(animatableData: VectorPair<CGFloat, CGFloat>) {
+    public init(vector: VectorPair<CGFloat, CGFloat>) {
         self.init(
-            width: animatableData.first,
-            height: animatableData.second)
+            width: vector.first,
+            height: vector.second)
     }
     
 }
@@ -148,7 +148,7 @@ extension CGSize: VectorConvertible {
 /// Adds `VectorConvertible` conformance
 extension CGPoint: VectorConvertible {    
     
-    public var animatableData: VectorPair<CGFloat, CGFloat> {
+    public var vector: VectorPair<CGFloat, CGFloat> {
         get {
             VectorPair(
                 first: x,
@@ -161,10 +161,10 @@ extension CGPoint: VectorConvertible {
 
     }
     
-    public init(animatableData: VectorPair<CGFloat, CGFloat>) {
+    public init(vector: VectorPair<CGFloat, CGFloat>) {
         self.init(
-            x: animatableData.first,
-            y: animatableData.second)
+            x: vector.first,
+            y: vector.second)
     }
     
 }
@@ -172,21 +172,21 @@ extension CGPoint: VectorConvertible {
 /// Adds `VectorConvertible` conformance
 extension CGRect: VectorConvertible {
     
-    public init(animatableData: VectorPair<CGPoint.AnimatableData, CGSize.AnimatableData>) {
+    public init(vector: VectorPair<CGPoint.VectorType, CGSize.VectorType>) {
         self.init(
-            origin: CGPoint(animatableData: animatableData.first),
-            size: CGSize(animatableData: animatableData.second))
+            origin: CGPoint(vector: vector.first),
+            size: CGSize(vector: vector.second))
     }
     
-    public var animatableData: VectorPair<CGPoint.AnimatableData, CGSize.AnimatableData> {
+    public var vector: VectorPair<CGPoint.VectorType, CGSize.VectorType> {
         get {
             VectorPair(
-                first: origin.animatableData,
-                second: size.animatableData)
+                first: origin.vector,
+                second: size.vector)
         }
         set {
-            origin.animatableData = newValue.first
-            size.animatableData = newValue.second
+            origin.vector = newValue.first
+            size.vector = newValue.second
         }
 
     }

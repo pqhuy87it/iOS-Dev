@@ -33,6 +33,29 @@ class ViewController: UIViewController {
         button.setTitleColor(UIColor.white, for: UIControl.State.normal)
         button.addTarget(self, action: #selector(ViewController.animateView(_:)), for: .touchUpInside)
         self.view.addSubview(button)
+
+        // Open the examples gallery.
+        let examplesButton = UIButton(type: .system)
+        examplesButton.frame = CGRect(x: self.view.bounds.size.width - 130, y: 40, width: 120, height: 40)
+        examplesButton.setTitle("Examples ▸", for: .normal)
+        examplesButton.setTitleColor(UIColor.white, for: .normal)
+        examplesButton.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        examplesButton.layer.cornerRadius = 8
+        examplesButton.addTarget(self, action: #selector(ViewController.openExamples), for: .touchUpInside)
+        self.view.addSubview(examplesButton)
+    }
+
+    @objc func openExamples() {
+        let examples = ChainableExamplesViewController()
+        examples.modalPresentationStyle = .fullScreen
+        // Provide a dismiss affordance since we present modally without a nav bar.
+        let close = UIButton(type: .system)
+        close.setTitle("✕ Close", for: .normal)
+        close.addAction(UIAction { [weak examples] _ in examples?.dismiss(animated: true) }, for: .touchUpInside)
+        present(examples, animated: true) {
+            close.frame = CGRect(x: 16, y: max(examples.view.safeAreaInsets.top, 44) - 8, width: 80, height: 30)
+            examples.view.addSubview(close)
+        }
     }
 
     @objc func animateView(_ sender: UIButton) {

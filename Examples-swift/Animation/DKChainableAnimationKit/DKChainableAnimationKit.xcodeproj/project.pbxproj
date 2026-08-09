@@ -10,6 +10,7 @@
 		1163E612278BD89200AA1A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163E611278BD89200AA1A0A /* AppDelegate.swift */; };
 		1163E614278BD89200AA1A0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163E613278BD89200AA1A0A /* SceneDelegate.swift */; };
 		1163E616278BD89200AA1A0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163E615278BD89200AA1A0A /* ViewController.swift */; };
+		1163E641278BD8CF00AA1A0A /* ChainableExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163E640278BD8CF00AA1A0A /* ChainableExamplesViewController.swift */; };
 		1163E619278BD89200AA1A0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1163E617278BD89200AA1A0A /* Main.storyboard */; };
 		1163E61B278BD89300AA1A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1163E61A278BD89300AA1A0A /* Assets.xcassets */; };
 		1163E61E278BD89300AA1A0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1163E61C278BD89300AA1A0A /* LaunchScreen.storyboard */; };
@@ -30,6 +31,7 @@
 		1163E611278BD89200AA1A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1163E613278BD89200AA1A0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1163E615278BD89200AA1A0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1163E640278BD8CF00AA1A0A /* ChainableExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainableExamplesViewController.swift; sourceTree = "<group>"; };
 		1163E618278BD89200AA1A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1163E61A278BD89300AA1A0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1163E61D278BD89300AA1A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				1163E611278BD89200AA1A0A /* AppDelegate.swift */,
 				1163E613278BD89200AA1A0A /* SceneDelegate.swift */,
 				1163E615278BD89200AA1A0A /* ViewController.swift */,
+				1163E640278BD8CF00AA1A0A /* ChainableExamplesViewController.swift */,
 				1163E617278BD89200AA1A0A /* Main.storyboard */,
 				1163E61A278BD89300AA1A0A /* Assets.xcassets */,
 				1163E61C278BD89300AA1A0A /* LaunchScreen.storyboard */,
@@ -182,6 +185,7 @@
 				1163E637278BD8CF00AA1A0A /* DKKeyFrameAnimation.swift in Sources */,
 				1163E634278BD8CF00AA1A0A /* DKChainableAnimationKit+Bezier.swift in Sources */,
 				1163E616278BD89200AA1A0A /* ViewController.swift in Sources */,
+				1163E641278BD8CF00AA1A0A /* ChainableExamplesViewController.swift in Sources */,
 				1163E630278BD8CF00AA1A0A /* DKChainableAnimationKit+Effects.swift in Sources */,
 				1163E638278BD8CF00AA1A0A /* DKChainableAnimationKit.swift in Sources */,
 				1163E632278BD8CF00AA1A0A /* DKKeyframeAnimationFunction.swift in Sources */,

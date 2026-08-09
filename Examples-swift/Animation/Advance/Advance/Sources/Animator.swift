@@ -33,7 +33,7 @@ public final class Animator<Value: VectorConvertible> {
         didSet {
             dispatchPrecondition(condition: .onQueue(.main))
             displayLink.isPaused = state.isAtRest
-            if state.value.animatableData != oldValue.value.animatableData {
+            if state.value.vector != oldValue.value.vector {
                 onChange?(state.value)
             }
         }
@@ -145,7 +145,7 @@ extension Animator {
             switch self {
             case .atRest(let value):
                 var result = value
-                result.animatableData = .zero
+                result.vector = .zero
                 return result
             case .animating(let animation): return animation.velocity
             case .simulating(let simulation): return simulation.velocity

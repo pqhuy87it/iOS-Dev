@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "68D9A695-18A0-4EF5-997D-231FABC45040"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3781FA4-CADC-471E-B594-9D8759C19138"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanGestureRecognizer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "touchesBegan(_:with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A3781FA4-CADC-471E-B594-9D8759C19138 - 59b4ab1456ec4f39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FloatingView.NoDelayPanGestureRecognizer.touchesBegan(_: Swift.Set&lt;__C.UITouch&gt;, with: __C.UIEvent) -&gt; ()"
+                  moduleName = "FloatingView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ts-quanghuy.pham/Rakuten-Projects/Temp/FloatingView/FloatingView/Sources/PanGestureRecognizer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "A3781FA4-CADC-471E-B594-9D8759C19138 - 59b4ab1456ec4f39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FloatingView.NoDelayPanGestureRecognizer.touchesBegan(_: Swift.Set&lt;__C.UITouch&gt;, with: __C.UIEvent) -&gt; ()"
+                  moduleName = "FloatingView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ts-quanghuy.pham/Rakuten-Projects/Temp/FloatingView/FloatingView/Sources/PanGestureRecognizer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "772">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ADCF11A9-F6CE-4359-BABB-36BFB6038B64"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanGestureRecognizer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "touchesMoved(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E28C55A8-0654-47C5-B555-6DB61198E0DC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "gestureRecognizer(_:shouldRequireFailureOf:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "17DEF0C6-07DA-4108-B787-B84E4C859C31"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "handlePan(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "17DEF0C6-07DA-4108-B787-B84E4C859C31 - 9d6e86a48e0b0f6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FloatingView.PanelGestures.VerticalGestureState.handlePan(__C.UIGestureRecognizer &amp; FloatingView.PanGestureRecognizer) -&gt; ()"
+                  moduleName = "FloatingView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ts-quanghuy.pham/Rakuten-Projects/Temp/FloatingView/FloatingView/Sources/PanelGestures.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "17DEF0C6-07DA-4108-B787-B84E4C859C31 - 9d6e86a48e0b0f6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FloatingView.PanelGestures.VerticalGestureState.handlePan(__C.UIGestureRecognizer &amp; FloatingView.PanGestureRecognizer) -&gt; ()"
+                  moduleName = "FloatingView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ts-quanghuy.pham/Rakuten-Projects/Temp/FloatingView/FloatingView/Sources/PanelGestures.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA9CE2AD-6FE5-4AAB-BC59-00CE59553B7C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
+            landmarkName = "handlePanStarted(_:state:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3148695C-EB60-412B-A8E3-0541828380E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "handlePanStarted(_:state:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2622243-CC47-4583-B07C-08FFE62BD35F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "handlePanStarted(_:state:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A7A3000-9525-4371-AC77-106E1C9BFB6F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "shouldStartPan(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7A7A3000-9525-4371-AC77-106E1C9BFB6F - 23abe334eba52c70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FloatingView.PanelGestures.VerticalHandler.shouldStartPan(__C.UIGestureRecognizer) -&gt; Swift.Bool"
+                  moduleName = "FloatingView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ts-quanghuy.pham/Rakuten-Projects/Temp/FloatingView/FloatingView/Sources/PanelGestures.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "424"
+                  endingLineNumber = "424"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "7A7A3000-9525-4371-AC77-106E1C9BFB6F - 23abe334eba52c70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FloatingView.PanelGestures.VerticalHandler.shouldStartPan(__C.UIGestureRecognizer) -&gt; Swift.Bool"
+                  moduleName = "FloatingView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ts-quanghuy.pham/Rakuten-Projects/Temp/FloatingView/FloatingView/Sources/PanelGestures.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "424"
+                  endingLineNumber = "424"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8986C6F-1A37-429F-A04F-5CBE1505238C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "handlePan(_:state:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E8986C6F-1A37-429F-A04F-5CBE1505238C - 5ea164ecc0dfcccd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FloatingView.PanelGestures.VerticalHandler.handlePan(_: __C.UIGestureRecognizer &amp; FloatingView.PanGestureRecognizer, state: FloatingView.PanelGestures.VerticalGestureState) -&gt; ()"
+                  moduleName = "FloatingView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ts-quanghuy.pham/Rakuten-Projects/Temp/FloatingView/FloatingView/Sources/PanelGestures.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "436"
+                  endingLineNumber = "436"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "E8986C6F-1A37-429F-A04F-5CBE1505238C - 5ea164ecc0dfcc0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FloatingView.PanelGestures.VerticalHandler.handlePan(_: __C.UIGestureRecognizer &amp; FloatingView.PanGestureRecognizer, state: FloatingView.PanelGestures.VerticalGestureState) -&gt; ()"
+                  moduleName = "FloatingView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ts-quanghuy.pham/Rakuten-Projects/Temp/FloatingView/FloatingView/Sources/PanelGestures.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "438"
+                  endingLineNumber = "438"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "484C4D42-651F-47B9-A454-678FB56B893A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanGestureRecognizer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "touchesBegan(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1883C360-BA2A-42B6-AAD4-4DA2681D96F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelRepositionContext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "isMovingPastTrailingEdge"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "975D885D-4C61-4B93-A9A5-C8C39E92107F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelRepositionContext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "isMovingPastLeadingEdge"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1131F68-AEFB-469F-98F4-9DF054D5990D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelConstraints.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "safeArea"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A1131F68-AEFB-469F-98F4-9DF054D5990D - 8a69c57928c01c88"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FloatingView.PanelConstraints.safeArea.getter : __C.CGRect"
+                  moduleName = "FloatingView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ts-quanghuy.pham/Rakuten-Projects/Temp/FloatingView/FloatingView/Sources/PanelConstraints.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "A1131F68-AEFB-469F-98F4-9DF054D5990D - 8a69c57928c01caf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FloatingView.PanelConstraints.safeArea.getter : __C.CGRect"
+                  moduleName = "FloatingView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ts-quanghuy.pham/Rakuten-Projects/Temp/FloatingView/FloatingView/Sources/PanelConstraints.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46708881-FCBE-4BFA-A2A9-3B67248E2EC6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "shouldStartPan(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B6C301A-BE87-4F00-8D7D-3DCC9B7E38B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "468"
+            endingLineNumber = "468"
+            landmarkName = "gestureRecognizer(_:isAllowedToStartByContentOf:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91632655-569C-48E5-A491-24BE85178DBA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "300"
+            endingLineNumber = "300"
+            landmarkName = "handlePanEnded(_:state:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED6D9F0B-C0FA-4CB5-88F2-AFEE1BDE77BB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FloatingView/Sources/PanelTransitionCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "animateAlongsideTransition(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
