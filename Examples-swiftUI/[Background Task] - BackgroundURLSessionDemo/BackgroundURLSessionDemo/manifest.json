@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "icons": [
+    { "id": "weather-sun",   "url": "http://192.168.1.10:8000/icons/weather-sun.png" },
+    { "id": "weather-rain",  "url": "http://192.168.1.10:8000/icons/weather-rain.png" },
+    { "id": "weather-storm", "url": "http://192.168.1.10:8000/icons/weather-storm.png" },
+    { "id": "alert-flood",   "url": "http://192.168.1.10:8000/icons/alert-flood.png" },
+    { "id": "alert-quake",   "url": "http://192.168.1.10:8000/icons/alert-quake.png" },
+    { "id": "shelter",       "url": "http://192.168.1.10:8000/icons/shelter.png" }
+  ]
+}
