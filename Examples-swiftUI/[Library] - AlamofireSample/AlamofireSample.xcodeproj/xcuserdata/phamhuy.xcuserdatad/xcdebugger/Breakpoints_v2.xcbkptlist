@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "575D95DD-8FBE-4497-ACD3-4C2ECB5433B4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC06FC15-06CB-4DAD-8BBA-B814028E581A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlamofireSample/Presentation/Modules/HomePhotos/Views/PhotosListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "loadPhotos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "033E8B28-31FC-4B1B-99F9-4D0C8C48A52A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlamofireSample/Presentation/Common/Views/ImageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "loadImage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "033E8B28-31FC-4B1B-99F9-4D0C8C48A52A - 3d056643863ffcf0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 () async throws -&gt; __C.UIImage in AlamofireSample.ImageView.loadImage() -&gt; ()"
+                  moduleName = "AlamofireSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/Downloads/AlamofireSample/AlamofireSample/Presentation/Common/Views/ImageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "033E8B28-31FC-4B1B-99F9-4D0C8C48A52A - 925d4990e3a0d6e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 () async throws -&gt; __C.UIImage in AlamofireSample.ImageView.loadImage() -&gt; ()"
+                  moduleName = "AlamofireSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/Downloads/AlamofireSample/AlamofireSample/Presentation/Common/Views/ImageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "033E8B28-31FC-4B1B-99F9-4D0C8C48A52A - ba2269d994a3b0fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 () async throws -&gt; __C.UIImage in AlamofireSample.ImageView.loadImage() -&gt; ()"
+                  moduleName = "AlamofireSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phamhuy/Downloads/AlamofireSample/AlamofireSample/Presentation/Common/Views/ImageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

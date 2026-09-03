@@ -1,0 +1,33 @@
+import SwiftUI
+
+struct TopicCardView: View {
+    let photo: Photo
+
+    var body: some View {
+            VStack(alignment: .leading, spacing: 8) {
+                ZStack(alignment: .bottomLeading) {
+                    ImageView(url: photo.urls.small)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 180, height: 260)
+                        .cornerRadius(16)
+                        .clipped()
+                    
+                    Text(photo.user.name ?? photo.user.username)
+                        .font(.caption2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 6)
+                        .background(Color.black.opacity(0.6))
+                        .cornerRadius(6)
+                        .padding(10)
+                }
+            }
+        }
+}
+
+#Preview {
+    TopicCardView(photo: Photo.mock)
+        .padding()
+        .background(Color.black) // Add black background to easily see white text
+}
